@@ -131,13 +131,15 @@ Read-only database access
 
 <h2>Project Explanation</h2>
 
-With this project I tackled a common occurrence in the cloud- when startups need to scale and implement best practices. To address the issue, I applied my security knowledge to set up a strategically sound architecture.
+In this project, I addressed a common challenge for startups: moving from a fast launch setup to a secure, scalable cloud environment. Using my security and AWS expertise, I designed a stronger architecture and implemented best practices to protect StartupCo’s infrastructure.
 
- I enabled MFA on the root account, and stopped using it to configure the AWS environment. I created a new admin account for that role. Not using the root account and locking it down is a vital security practice. If the root account is compromised, your whole infrastructure could be destroyed. I also reference the best practice of not using the management account, as it is best practice to save that account for control of member accounts and billing. 
+I began by securing the AWS root account. I enabled MFA, stopped using it for daily operations, and created a new administrator account for ongoing management. Locking down the root account is one of the most critical steps in cloud security—if it’s compromised, the entire environment is at risk. I also emphasized separating the management (or billing) account from operational accounts, aligning with AWS security best practices.
 
-I added users to corresponding groups based on their job role. I then created permissions for the groups, making sure to implement the concept of least privilege. I also enabled MFA for our users for maximum security.
+Next, I created IAM users and groups based on job roles and applied the principle of least privilege. Each team—Developers, Operations, Finance, and Analysts—received only the permissions they needed. This structure provides clearer accountability and reduces the risk of unauthorized access.
 
-Finally, I created a very secure password policy with password expiration and a preventative password reuse policy.
+I also implemented multi-factor authentication for all users and rolled out a strong password policy with expiration and password reuse prevention. This ensures that access credentials remain secure and harder to compromise.
+
+Together, these changes transformed a shared-root-account setup into a well-structured, secure AWS environment tailored to StartupCo’s needs while laying the groundwork for future growth.
 
 <h2>Implementation Screenshots</h2>
 
