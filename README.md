@@ -133,9 +133,9 @@ Read-only database access
 
 In this project, I addressed a common challenge for startups: moving from a fast launch setup to a secure, scalable cloud environment. Using my security and AWS expertise, I designed a stronger architecture and implemented best practices to protect StartupCo’s infrastructure.
 
-I began by securing the AWS root account. I enabled MFA, stopped using it for daily operations, and created a new administrator account for ongoing management. Locking down the root account is one of the most critical steps in cloud security—if it’s compromised, the entire environment is at risk. I also emphasized separating the management (or billing) account from operational accounts, aligning with AWS security best practices.
+I began by securing the AWS root account. I enabled MFA, stopped using it for daily operations, and created a new administrator account for ongoing management. Locking down the root account is one of the most critical steps in cloud security- if it’s compromised, the entire environment is at risk. I also emphasized separating the management/billing account from operational accounts, aligning with AWS security best practices.
 
-Next, I created IAM users and groups based on job roles and applied the principle of least privilege. Each team—Developers, Operations, Finance, and Analysts—received only the permissions they needed. This structure provides clearer accountability and reduces the risk of unauthorized access.
+Next, I created IAM users and groups based on job roles and applied the principle of least privilege. Each team- Developers, Operations, Finance, and Analysts, received only the permissions they needed. This structure provides clearer accountability and reduces the risk of unauthorized access.
 
 I also implemented multi-factor authentication for all users and rolled out a strong password policy with expiration and password reuse prevention. This ensures that access credentials remain secure and harder to compromise.
 
